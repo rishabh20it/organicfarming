@@ -1,0 +1,291 @@
+body{
+    background-color:none;
+}
+
+/* css reset*/
+html{
+    scroll-behavior: smooth; /*for smooth sliding of mouse pointer*/
+}
+
+*{margin:0;
+padding: 0;
+}
+
+/* css variables*/
+:root{
+--navbar--height:59px;
+
+}
+
+
+
+
+/*navbar logo and image   , navbar*/
+#logo{
+    margin : 10px,34px;
+}
+
+
+#logo img{
+
+    margin : 3px,4px;
+    height : 80px
+}
+/*navbar lists */
+
+
+
+
+ #navbar ul{
+    display: flex;
+}
+
+#navbar ul{
+    position: relative;
+    font-family: monospace;
+}
+#navbar ::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top:0px;                /* remember this remember2 top,left*/
+    left:0px;
+    height: 13%;
+    width:100%;
+    z-index: -1;
+    opacity: 1.5;
+}
+
+#navbar ul li {                                  
+
+    background-color: none;
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a{
+    padding: 6px 15px;
+    display: block;         /* display block for using of padding*/
+    border-radius: 20px;
+    text-decoration: none; /* for unlining the word*/
+    color:white;  /* color of the text of a*/
+    margin:8px;
+
+}
+
+
+
+#navbar ul li a:hover , #navbar ul li a.active{   /* this is basically used  for active home page*/
+    color: chartreuse;
+    background-color: cornsilk;
+
+}
+
+#navbar{
+    display: flex; /*make elents comes in a line */
+     align-items: center;/* makes it in centre  */
+     
+     
+     
+     
+
+} 
+
+/*home section*/
+#home {                  /*for order button*/
+    display: flex;       /*ek column meh karne ke liye*/
+    flex-direction: column;
+    padding: 3px,200px;
+    justify-content: center;   /*aling the flex item at the centre of the container*/
+    align-items: center;
+       /*will make everything in centre*/
+}
+
+#home::before{         /* learn this paragraph by heart its important*/
+
+    content:"";
+    background: url('vegetables-752153_1920.jpg') no-repeat center center/cover; /*learn it image repeat ni karega*/
+    position: absolute;
+    height: 46.5%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.9;
+    top:0px;                     /* can change the nav bar REMEMBER1  top,left*/
+    left:0px;
+}
+
+#home h1{   /*for section heading*/
+    color: white;
+    text-align: center;
+}
+
+#home p{  /*for section paragraph*/
+ 
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* no. 2-- services section */
+
+
+#services{
+margin: 34px;
+display:flex;
+
+
+}
+#services  .box{
+border: 2px solid brown;
+padding: 30px;
+margin: 20px;
+border-radius: 20px;
+background-color:rgb(173, 209, 173);
+margin-bottom: 20px;
+}
+#services   .box  img{
+height: 117px;
+margin: auto;
+display: block;
+
+
+}
+#services  .box p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*  clients sections  */
+
+.h-primary-section{
+    size: 150%;
+    color: blanchedalmond;
+    ;
+}
+
+
+
+#client-section   {
+    align-items: center;
+    position: relative;  /*position will be relative to 100*/
+    
+    }
+
+
+    
+#client-section::before {
+   content: "";
+   position: absolute;
+   background: url(vegetables-752153_1920.jpg);
+   height: 100%;  /*because position is relative*/
+   width:100%;
+   z-index: -1;
+   opacity: 0.7;
+
+    
+    }
+
+
+    
+.clients img {
+   height: 120px;
+    
+    }
+
+  .client-items{
+      padding: 30px;
+  }  
+
+
+
+.clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*contact section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content:"";
+    background: url('10_Best_8GB_RAM_Mobile_Phones_in_India_Banner_Best_Phone_with_8GB_RAM_790x345.jpg') no-repeat center center/cover; /*learn it image repeat ni karega*/
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+                        /* can change the nav bar REMEMBER1  top,left*/
+   
+
+}
+
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contact-box input , #contact-box textarea{
+width: 100%;
+padding: 0.5rem;
+border-radius: 9px;
+font-size: 1.1rem;
+}
+
+
+#contact-box form{
+
+    width: 30%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*footer*/
+
+footer{
+    background: black;
+    color: white;
+    padding :9px,20px;
+ font-size: 20px;
+}
+
+
+/*utility class*/
+.h-primary{                           /*  heading   rem  relative to root element */
+font-size: 2rem;
+padding:33px;
+
+font-family: Arial, Helvetica, sans-serif;  
+}
+
+.h-secondary{   
+    font-family: Arial, Helvetica, sans-serif;                        /*  heading   rem  relative to root element */
+    font-size: 1.5rem;
+    padding:33px;
+    }
+
+.btn{
+
+    padding:5px;
+    border: 2px,soild,green;
+    background-color:white;
+    margin :20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;             /*to make cursor pointer*/
+}
+
+.centre{
+    text-align: center;
+}
+
+.h-primary{
+    color:white;
+}

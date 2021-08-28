@@ -1,0 +1,70 @@
+body{
+    background:rgb(170, 192, 125)
+}
+/*navbar section*/
+
+#navbar{
+    flex-direction: column;
+
+}
+
+#navbar ul li a {
+    font-size: 0.5rem;
+    padding:0px;
+}
+
+/*home section*/
+
+#home{ 
+    height: 460px;
+    padding:2px 48px;
+
+}
+
+#home p{
+    font-size: 10px;
+}
+
+
+#home::before{
+    height: 580px;
+}
+
+#services {
+    flex-direction: column;
+}
+#services .box{
+    padding: 0px;
+    margin:0px -1px;
+    margin-bottom: 30px;
+}
+
+/*clients section*/
+
+.clients{
+    flex-wrap: wrap;
+}
+
+.clients  img {
+
+    width: 60px;
+    padding:0px 6px;
+    height: auto;
+}
+
+/*contact section*/
+#contact-box form{
+    width:80%;
+}
+
+/*utility box*/
+
+.h-primary{
+    font-size: 10px;
+}
+
+/*button*/
+.btn{
+    font-size: 13px;
+    padding:4px,8px;
+}
